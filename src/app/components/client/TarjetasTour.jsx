@@ -5,7 +5,7 @@ import { questrial, abel } from "../../ui/fonts.js";
 const TarjetasTour = () => {
   return (
     <div
-      className={`${abel.className} grid auto-rows-min sm:grid-cols-3 sm:grid-rows-2 gap-4 sm:w-screen w-full px-4 sm:h-1000 sm:p-12 border border-solid text-black`}
+      className={`${abel.className} grid auto-rows-min sm:grid-cols-3 sm:grid-rows-2 gap-4 sm:w-fit w-full px-4 sm:p-8 border border-solid text-black`}
     >
       <div className="grid w-full shadow-md  p-4 rounded-xl border backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
         <Image src="/img/inmobiliaria.jpg" fill className="rounded-xl" />

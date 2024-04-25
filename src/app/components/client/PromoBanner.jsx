@@ -7,7 +7,7 @@ import { questrial, abel, bebas } from "../../ui/fonts.js";
 const PromoBanner = () => {
   return (
     <div
-      className={`${questrial.className} grid sm:grid-cols-2  self-center auto-rows-min container w-screen sm:pt-8 sm:px-10 pt-[109.862px] `}
+      className={`${questrial.className} grid sm:grid-cols-2  self-center auto-rows-min container  sm:pt-8 sm:px-8 pt-[109.862px] `}
     >
       <Link
         href="#homeTour"
