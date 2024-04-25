@@ -5,11 +5,11 @@ import { questrial, abel } from "../../ui/fonts.js";
 const TarjetasTour = () => {
   return (
     <div
-      className={`${abel.className} grid auto-rows-min sm:grid-cols-3 sm:grid-rows-2 gap-4 sm:w-fit w-full px-4 sm:p-8 border border-solid text-black`}
+      className={`${abel.className} grid auto-rows-min w-screen justify-items-center sm:grid-cols-3 sm:grid-rows-2 gap-4 sm:w-fit sm:p-8 border border-solid text-black`}
     >
-      <div className="grid w-full shadow-md  p-4 rounded-xl border backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
+      <div className="grid w-[90%] shadow-md  p-4 rounded-xl border backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
         <Image src="/img/inmobiliaria.jpg" fill className="rounded-xl" />
-        <div className="grid  inset-0 rounded-xl bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 backdrop-blur-sm">
+        <div className="grid inset-0 rounded-xl bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 backdrop-blur-sm">
           <div className="text-center text-black px-12">
             <h3 className="mt-4 text-2xl underline">
               Inmobiliarias/Corredoras
@@ -22,7 +22,7 @@ const TarjetasTour = () => {
           </div>
         </div>
       </div>
-      <div className="grid w-full shadow-md p-4 rounded-xl border backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
+      <div className="grid w-[90%] shadow-md p-4 rounded-xl border backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
         <Image src="/img/turismo.jpg" fill className="rounded-xl" />
         <div className="grid  inset-0 rounded-xl bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 backdrop-blur-sm">
           <div className="text-center  text-black px-12">
@@ -36,7 +36,7 @@ const TarjetasTour = () => {
           </div>
         </div>
       </div>
-      <div className="grid w-full shadow-md p-4 rounded-xl border backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
+      <div className="grid w-[90%] shadow-md p-4 rounded-xl border backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
         <Image src="/img/restaurant.jpg" fill className="rounded-xl" />
         <div className="grid  inset-0 rounded-xl bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 backdrop-blur-sm">
           <div className=" text-center  text-black px-12">
@@ -48,7 +48,7 @@ const TarjetasTour = () => {
           </div>
         </div>
       </div>
-      <div className="grid w-full shadow-md p-4 rounded-xl border backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
+      <div className="grid w-[90%] shadow-md p-4 rounded-xl border backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
         <Image src="/img/museum.jpg" fill className="rounded-xl" />
         <div className="grid  inset-0 rounded-xl bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 backdrop-blur-sm">
           <div className="text-center  text-black px-12">
@@ -61,7 +61,7 @@ const TarjetasTour = () => {
           </div>
         </div>
       </div>
-      <div className="grid w-full shadow-md rounded-xl border backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
+      <div className="grid w-[90%] shadow-md rounded-xl border backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
         <iframe
           id="panoee-tour-embeded"
           name="Zapallar"
@@ -79,7 +79,7 @@ const TarjetasTour = () => {
           className="rounded-xl"
         />
       </div>
-      <div className="grid w-full shadow-md p-4 rounded-xl border backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
+      <div className="grid w-[90%] shadow-md p-4 rounded-xl border backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
         <Image src="/img/universidad.jpg" fill className="rounded-xl" />
         <div className="grid  inset-0 rounded-xl bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 backdrop-blur-sm">
           <div className="text-center  text-black px-12">
@@ -95,7 +95,7 @@ const TarjetasTour = () => {
           </div>
         </div>
       </div>
-      <div className="grid w-full shadow-md p-4 rounded-xl border backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
+      <div className="grid w-[90%] shadow-md p-4 rounded-xl border backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
         <Image src="/img/industria.jpg" fill className="rounded-xl" />
         <div className="grid  inset-0 rounded-xl bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 backdrop-blur-sm">
           <div className="text-center  text-black px-12">
@@ -110,7 +110,7 @@ const TarjetasTour = () => {
           </div>
         </div>
       </div>
-      <div className="grid w-full shadow-md p-4 rounded-xl border backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
+      <div className="grid w-[90%] shadow-md p-4 rounded-xl border backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
         <Image src="/img/automotora.jpg" fill className="rounded-xl" />
         <div className="grid  inset-0 rounded-xl bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 backdrop-blur-sm">
           <div className="text-center  text-black px-12">
@@ -123,7 +123,7 @@ const TarjetasTour = () => {
           </div>
         </div>
       </div>
-      <div className="grid w-full shadow-md p-4 rounded-xl border backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
+      <div className="grid w-[90%] shadow-md p-4 rounded-xl border backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
         <Image src="/img/aseguradora.jpg" fill className="rounded-xl" />
         <div className="grid  inset-0 rounded-xl bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 backdrop-blur-sm">
           <div className="text-center  text-black px-12">

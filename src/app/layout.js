@@ -6,7 +6,7 @@ import WspButton from "./components/client/WspButton";
 import Footer from "./components/client/Footer";
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html className="w-fit" lang="en">
       <body className={`${roboto.className} w-screen antialiased`}>
         <HomeBg />
         <NavBar />
