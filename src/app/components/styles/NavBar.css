@@ -6,7 +6,6 @@
     grid-template-columns: 0.2fr 1fr;
     grid-template-rows: 1fr;
     justify-items: right;
-    border-bottom: solid 1px #a4c44b;
     color: green;
   
   }
@@ -33,7 +32,7 @@
     padding-left: 8px;
     padding-top: 3px;
     padding-bottom: 3px;
-    border-radius: 20px;
+    border-radius: 100px;
   }
   
   .navButton.active {
@@ -45,7 +44,7 @@
     padding-left: 8px;
     padding-top: 3px;
     padding-bottom: 3px;
-    border-radius: 20px;
+    border-radius: 100px;
   }
   
   
@@ -118,23 +117,19 @@
     }
   
     .navItem {
+      display: grid;
       position: absolute;
       top: 60px;
       left: 0;
-      background: #d4fcc2;
-      display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: auto;
       grid-gap: 15px;
       padding-left: 20px;
-      width: 101vw;
-      height: fit-content;
       padding-left: 25px;
       padding-top: 25px;
       padding-bottom: 25px;
       transform: translateX(-100%);
       transition: 0.3s ease all;
-      /* backdrop-filter: blur(9px); Aplicar difuminado */
     }
   
     .navItem.open {

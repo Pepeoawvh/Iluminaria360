@@ -1,5 +1,5 @@
 "use client";
-import { Manrope } from "next/font/google";
+import { questrial, abel, bebas } from "../../ui/fonts.js";
 import { useEffect, useRef, useState } from "react";
 import "../styles/NavBar.css";
 import Link from "next/link";
@@ -31,35 +31,28 @@ const NavBar = () => {
         {" "}
         <div className=" pl-5">
           <Image
-            width={200}
-            height={90}
+            width={150}
+            height={80}
             alt="Logo"
             src="img/logoIluminaria.svg"
           />
         </div>
       </Link>
-      <ul className={`navItem ${isOpen && "open"} sm:mt-0 mt-12`}>
-        <li>
+      <ul className={` ${questrial.className} sm:h-full bg-[#d4fcc2] sm:bg-[#f1f1f1] grid text-xl sm:grid-cols-3 sm:px-16 justify-items-center navItem ${isOpen && "open"} sm:mt-0 mt-12`}>
+        <li className="grid sm:border sm:border-x items-center justify-items-center sm:w-full sm:h-full w-fit h-fit hover:bg-slate-50 px-8 rounded-3xl duration-300 sm:rounded-none">
           <Link className="" href="/">
             Inicio
           </Link>
         </li>
-
-        <li>
-          <Link className="" href="/contacto">
-            Portafolio
+        <li className="grid sm:border sm:border-x items-center justify-items-center sm:w-full sm:h-full w-fit h-fit hover:bg-slate-50 px-8 rounded-3xl duration-300 sm:rounded-none">
+          <Link className="" href="/galeria">
+            Galeria
           </Link>
           {/* En los Link y Link usamos el atributo 'href' para indicar a donde queremos que nos lleve el enlace, en este caso a la ruta '/productos'. */}
         </li>
-        <li>
+        <li className="grid sm:border sm:border-x items-center justify-items-center sm:w-full sm:h-full w-fit h-fit hover:bg-slate-50 px-8 rounded-3xl duration-300 sm:rounded-none">
           <Link className="" href="/contacto">
-            Quiénes Somos
-          </Link>
-          {/* En los Link y Link usamos el atributo 'href' para indicar a donde queremos que nos lleve el enlace, en este caso a la ruta '/productos'. */}
-        </li>
-        <li>
-          <Link className="" href="/contacto">
-            Quiénes Somos
+            Contacto
           </Link>
           {/* En los Link y Link usamos el atributo 'href' para indicar a donde queremos que nos lleve el enlace, en este caso a la ruta '/productos'. */}
         </li>

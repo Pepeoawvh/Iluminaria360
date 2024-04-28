@@ -7,7 +7,7 @@ import { questrial, abel, bebas } from "../../ui/fonts.js";
 const PromoBanner = () => {
   return (
     <div
-      className={`${questrial.className} grid sm:grid-cols-2  self-center auto-rows-min container  sm:pt-8 sm:px-8 pt-[109.862px] `}
+      className={`${questrial.className} grid justify-self-center sm:grid-cols-2  self-center auto-rows-min container  sm:pt-8 sm:px-8 pt-[109.862px] `}
     >
       <Link
         href="#homeTour"
@@ -18,13 +18,6 @@ const PromoBanner = () => {
           shallow: true,
         }}
       >
-        {/* <Image
-          src="/img/360banner.png"
-          alt="Banner"
-          width={3000}
-          height={3000}
-          className=" h-full w-[700px] animate-fade animate-duration-[1500ms] animate-delay-0 animate-normal animate-fill-forwards"
-        /> */}
         <VideoBanner />
       </Link>
       <div className="grid auto-rows-min  gap-4 text-gray-900 text-5xl text-center drop-shadow animate-fade animate-duration-[1500ms] animate-delay-0 animate-normal animate-fill-forwards pt-8">
@@ -35,11 +28,10 @@ const PromoBanner = () => {
           Ofrece una experiencia inmersiva a tus clientes, permitiendoles
           explorar los espacios desde cualquier lugar.{" "}
         </p>
-        <ul className="grid gap-2 sm:w-1/2 w-[80%] text-lg text-start justify-self-center">
+        <ul className="grid gap-2 sm:w-1/2 w-[80%]  text-lg text-start justify-self-center">
           <li>✅Mejora la accesibilidad</li>
           <li>✅Ahorra tiempo y recursos</li>
           <li>✅Amplia el alcance de tu negocio</li>
-          <li>✅Compatibilidad con su sitio</li>
           <li>✅Facil de compartir</li>
           <li>✅Personalizables</li>
         </ul>

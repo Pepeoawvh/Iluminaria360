@@ -1,8 +1,11 @@
 import React from 'react'
+import Cuadricula from '../components/client/Cuadricula'
 
 const PageGaleria = () => {
   return (
-    <div>page</div>
+    <div>
+      <Cuadricula/>
+    </div>
   )
 }
 

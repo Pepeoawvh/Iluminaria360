@@ -2,7 +2,7 @@ import React from 'react'
 
 const IntroTour = () => {
   return (
-    <div id="homeTour" className='grid justify-items-center z-20 bg-white mb-5 sm:mt-5 mt-10 sm:mx-12 '>
+    <div id="homeTour" className='grid justify-items-center z-20 rounded-xl shadow-md bg-white mb-5 sm:mt-5 mt-10 sm:mx-12 '>
       <iframe
         id="panoee-tour-embeded"
         name="Depto Bilbao, Quilpué"
