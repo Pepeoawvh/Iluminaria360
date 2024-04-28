@@ -34,9 +34,9 @@ export default function Footer() {
       </div>
     </div>
 
-    {/* <!--Copyright section--> */}
+    {/* <!--Seccion copyright--> */}
     <div
-      className=" text-sm bg-neutral-300 p-4 text-center text-neutral-700 dark:bg-neutral-700 dark:text-neutral-200">
+      className=" text-xs  bg-neutral-300 p-2 text-center text-neutral-700 dark:bg-neutral-700 dark:text-neutral-200  select-none">
       © 2024 Todos los derechos reservados:
 <span> Iluminaria Fotografía Profesional </span>
     </div>

@@ -20,15 +20,15 @@ const PromoBanner = () => {
       >
         <VideoBanner />
       </Link>
-      <div className="grid auto-rows-min  gap-4 text-gray-900 text-5xl text-center drop-shadow animate-fade animate-duration-[1500ms] animate-delay-0 animate-normal animate-fill-forwards pt-8">
-        <h3 className={`${bebas.className} drop-shadow-lg`}>
+      <div className="grid auto-rows-min  select-none gap-4 text-gray-900 text-5xl text-center drop-shadow animate-fade animate-duration-[1500ms] animate-delay-0 animate-normal animate-fill-forwards pt-8">
+        <h3 className={`${bebas.className} drop-shadow-lg select-none`}>
           Potencia tu Negocio
         </h3>
         <p className="text-lg pt-8 p-4">
           Ofrece una experiencia inmersiva a tus clientes, permitiendoles
           explorar los espacios desde cualquier lugar.{" "}
         </p>
-        <ul className="grid gap-2 sm:w-1/2 w-[80%]  text-lg text-start justify-self-center">
+        <ul className="grid gap-2 sm:w-1/2 w-[80%]  select-none text-lg text-start justify-self-center">
           <li>✅Mejora la accesibilidad</li>
           <li>✅Ahorra tiempo y recursos</li>
           <li>✅Amplia el alcance de tu negocio</li>
