@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React from "react";
 import Image from "next/image";
 import { questrial, abel } from "../../ui/fonts.js";
@@ -12,9 +12,9 @@ const TarjetasTour = () => {
         Beneficios para su negocio
       </h2>
       <div
-        className={`${abel.className} grid auto-rows-min w-screen justify-items-center sm:grid-cols-3 sm:grid-rows-2 gap-4 sm:w-fit sm:m-8  -solid text-black`}
+        className={`${abel.className} grid auto-rows-auto w-screen justify-items-center items-center sm:grid-cols-3 sm:grid-rows-3 gap-4 sm:w-fit sm:m-8 text-black`}
       >
-        <div className="grid w-[90%] shadow-md  p-4 rounded-xl  backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
+        <div className="grid shadow-md  p-4 mx-4 md:mx-2  rounded-xl  backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
           <Image src="/img/inmobiliaria.jpg" fill className="rounded-xl" />
           <div className="grid inset-0 rounded-xl bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 backdrop-blur-sm">
             <div className="text-center text-black px-12">
@@ -30,7 +30,8 @@ const TarjetasTour = () => {
             </div>
           </div>
         </div>
-        <div className="grid w-[90%] shadow-md p-4 rounded-xl  backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
+
+        <div className="grid shadow-md  p-4 mx-4 md:mx-2  rounded-xl  backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
           <Image src="/img/turismo.jpg" fill className="rounded-xl" />
           <div className="grid  inset-0 rounded-xl bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 backdrop-blur-sm">
             <div className="text-center  text-black px-12">
@@ -46,7 +47,8 @@ const TarjetasTour = () => {
             </div>
           </div>
         </div>
-        <div className="grid w-[90%] shadow-md p-4 rounded-xl  backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
+
+        <div className="grid shadow-md  p-4 mx-4 md:mx-2  rounded-xl  backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
           <Image src="/img/restaurant.jpg" fill className="rounded-xl" />
           <div className="grid  inset-0 rounded-xl bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 backdrop-blur-sm">
             <div className=" text-center  text-black px-12">
@@ -60,7 +62,8 @@ const TarjetasTour = () => {
             </div>
           </div>
         </div>
-        <div className="grid w-[90%] shadow-md p-4 rounded-xl  backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
+
+        <div className="grid shadow-md  p-4 mx-4 md:mx-2  rounded-xl  backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
           <Image src="/img/museum.jpg" fill className="rounded-xl" />
           <div className="grid  inset-0 rounded-xl bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 backdrop-blur-sm">
             <div className="text-center  text-black px-12">
@@ -75,9 +78,10 @@ const TarjetasTour = () => {
             </div>
           </div>
         </div>
-        <div className="grid w-[90%] shadow-md rounded-xl  backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
+
+        <div className="grid  rounded-xl w-full backdrop-blur-sm h-60 group hover:scale-105 transition-transform duration-300 px-4 md:px-2  ">
           <iframe
-            id="panoee-tour-embeded"
+            id="tour-zapallar"
             name="Zapallar"
             src="https://tour.panoee.com/iframe/zapallar-bB64L5L66"
             frameBorder="0"
@@ -90,17 +94,18 @@ const TarjetasTour = () => {
             webkitallowfullscreen="false"
             mozallowfullscreen="false"
             loading="lazy"
-            className="rounded-xl"
+            className="rounded-xl shadow-md"
           />
         </div>
-        <div className="grid w-[90%] shadow-md p-4 rounded-xl  backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
+
+        <div className="grid shadow-md  p-4 mx-4 md:mx-2  rounded-xl  backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
           <Image src="/img/universidad.jpg" fill className="rounded-xl" />
           <div className="grid  inset-0 rounded-xl bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 backdrop-blur-sm">
             <div className="text-center  text-black px-12">
               <h3 className="mt-4 text-2xl underline select-none">
-                Universidades/Instituciones
+                Instituciones Educativas
               </h3>
-              <span className="grid pt-2 mt-2 self-center select-none">
+              <span className="grid pt-2 mt-2 self-center  text-sm select-none">
                 Permite a los futuros estudiantes conocer y explorar los
                 distintos campus y facultades. Aumente el prestigio de su
                 institucion dandola a conocer de manera interactiva.
@@ -108,7 +113,8 @@ const TarjetasTour = () => {
             </div>
           </div>
         </div>
-        <div className="grid w-[90%] shadow-md p-4 rounded-xl  backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
+
+        <div className="grid shadow-md  p-4 mx-4 md:mx-2  rounded-xl  backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
           <Image src="/img/industria.jpg" fill className="rounded-xl" />
           <div className="grid  inset-0 rounded-xl bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 backdrop-blur-sm">
             <div className="text-center  text-black px-12">
@@ -122,7 +128,8 @@ const TarjetasTour = () => {
             </div>
           </div>
         </div>
-        <div className="grid w-[90%] shadow-md p-4 rounded-xl  backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
+
+        <div className="grid shadow-md  p-4 mx-4 md:mx-2  rounded-xl  backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
           <Image src="/img/automotora.jpg" fill className="rounded-xl" />
           <div className="grid  inset-0 rounded-xl bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 backdrop-blur-sm">
             <div className="text-center  text-black px-12">
@@ -137,7 +144,8 @@ const TarjetasTour = () => {
             </div>
           </div>
         </div>
-        <div className="grid w-[90%] shadow-md p-4 rounded-xl  backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
+
+        <div className="grid shadow-md  p-4 mx-4 md:mx-2  rounded-xl  backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
           <Image src="/img/aseguradora.jpg" fill className="rounded-xl" />
           <div className="grid  inset-0 rounded-xl bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 backdrop-blur-sm">
             <div className="text-center  text-black px-12">
@@ -152,12 +160,12 @@ const TarjetasTour = () => {
             </div>
           </div>
         </div>
-        <div className="grid sm:col-span-3 mx-12 text-black">
-        {" "}
-        <span>Cotizar</span>{" "}
-      </div>
-      </div>
 
+        <div className="grid sm:col-span-3 mx-12 text-black">
+          {" "}
+          <span className="px-8  py-4 shadow-md text-2xl">Cotizar</span>{" "}
+        </div>
+      </div>
     </>
   );
 };

@@ -7,7 +7,7 @@ import Footer from "./components/client/Footer";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${roboto.className} bg-white h-full w-screen antialiased`}>
+      <body className={`${roboto.className} bg-white`}>
         <HomeBg />
         <NavBar />
         {children}
