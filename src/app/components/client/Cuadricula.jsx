@@ -7,7 +7,7 @@ import Link from "next/link.js";
 const Cuadricula = () => {
   return (
     <>
-      <div className="bg-white grid w-screen pt-24 justify-center items-center animate-fade animate-duration-[1500ms] animate-delay-0 animate-normal animate-fill-forwards">
+      <div className="bg-white grid h-full w-screen pt-24 justify-center items-center animate-fade animate-duration-[1500ms] animate-delay-0 animate-normal animate-fill-forwards">
         <h2
           className={`${abel.className} border-t-2 border-b-2 border-zinc-300 py-4 text-center font-bold mb-4 text-2xl text-black select-none`}
         >

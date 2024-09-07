@@ -30,7 +30,7 @@ const NavBar = () => {
   return (
     <nav
       ref={navRef}
-      className=" bg-white marker:grid items-center w-screen content-center shadow-sm bg-opacity-30 backdrop-blur-sm h-fit animate-fade animate-duration-[1500ms] animate-delay-0 animate-normal animate-fill-forwards"
+      className=" bg-white marker:grid items-center md:justify-items-center w-screen content-center shadow-sm bg-opacity-30 backdrop-blur-sm h-fit animate-fade animate-duration-[1500ms] animate-delay-0 animate-normal animate-fill-forwards"
     >
       <Link href="/">
         <div className=" select-none pl-5 ">
@@ -45,26 +45,26 @@ const NavBar = () => {
       <ul
         className={`grid ${
           questrial.className
-        } pr-6 sm:h-full bg-[#d4fcc2] backdrop-blur-2xl text-xl sm:grid-cols-3 sm:px-16 navItem ${
+        } pr-6 sm:h-full bg-[#d4fcc2]  sm:bg-slate-50  text-xl sm:grid-cols-3 sm:pr-8 navItem ${
           isOpen && "open"
         } sm:mt-0 mt-12`}
       >
         <Link
-          className="grid bg-[#e8fede] sm:border sm:border-x items-center justify-items-center sm:w-full sm:h-full h-fit hover:bg-slate-50 px-8 rounded-3xl duration-300 sm:rounded-none w-full select-none"
+          className="grid hover:bg-slate-50 bg-[#e8fede] md:bg-slate-50 md:hover:bg-[#e8fede]  sm:border-x-0 items-center justify-items-center sm:w-full sm:h-full h-fit  px-4 rounded-3xl duration-300 sm:rounded-none w-full select-none"
           href="/"
           onClick={handleLinkClick}
         >
           <li className="">Inicio</li>
         </Link>
         <Link
-          className="grid w-full bg-[#e8fede] sm:border sm:border-x items-center justify-items-center sm:w-full sm:h-full  h-fit hover:bg-slate-50 px-8 rounded-3xl duration-300 sm:rounded-none select-none"
+          className="grid w-full hover:bg-slate-50 bg-[#e8fede] md:bg-slate-50 md:hover:bg-[#e8fede]  sm:border-x items-center justify-items-center sm:w-full sm:h-full  h-fit px-8 rounded-3xl duration-300 sm:rounded-none select-none"
           href="/galeria"
           onClick={handleLinkClick}
         >
           <li className="">Galeria</li>
         </Link>
         <Link
-          className="grid bg-[#e8fede] sm:border sm:border-x items-center justify-items-center sm:w-full sm:h-full h-fit hover:bg-slate-50 px-8 rounded-3xl duration-300 sm:rounded-none w-full select-none"
+          className="grid hover:bg-slate-50 bg-[#e8fede] md:bg-slate-50 md:hover:bg-[#e8fede]   sm:border-x-0 items-center justify-items-center sm:w-full sm:h-full h-fit  px-8 rounded-3xl duration-300 sm:rounded-none w-full select-none"
           href="/quienesomos"
           onClick={handleLinkClick}
         >

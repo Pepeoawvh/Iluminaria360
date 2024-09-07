@@ -17,7 +17,7 @@ const QuienesSomos = () => {
                     </p>
                 <br />
                     <p className='text-left'>
-                        Nuestro objetivo es capturar la esencia de cada lugar y transmitirlo a través de nuestras imágenes. Utilizamos tecnología de vanguardia y técnicas innovadoras para crear experiencias visuales inmersivas.
+                        Nuestro objetivo es capturar la esencia de cada lugar y transmitirlo a través de nuestras imágenes.
                     </p>
                     <br />
                     <p className='md:text-left'>

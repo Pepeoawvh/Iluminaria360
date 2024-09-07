@@ -2,7 +2,6 @@
 import React from "react";
 import Image from "next/image";
 import { abel } from "../../ui/fonts.js";
-import GuiaPaseo from "./GuiaPaseoZ.jsx";
 import Link from "next/link";
 
 const TarjetasTour = () => {
@@ -12,7 +11,7 @@ const TarjetasTour = () => {
   return (
     <>
       <h2
-        className={`${abel.className} mt-4 pb-4 text-center font-bold text-2xl text-black select-none`}
+        className={`${abel.className} mt-12 pb-4 text-center font-bold text-2xl text-black select-none`}
       >
         Beneficios para su negocio
       </h2>
@@ -84,8 +83,13 @@ const TarjetasTour = () => {
           </div>
         </div>
 
-        <div className="grid  rounded-xl w-full backdrop-blur-sm h-60 group hover:scale-105 transition-transform duration-300 px-4 md:px-2  ">
-          <GuiaPaseo />
+        <div className="grid shadow-md content-center  p-4 mx-4 md:mx-2  rounded-xl  backdrop-blur-sm h-fit bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
+        <Image
+            width={250}
+            height={150}
+            alt="Logo"
+            src="img/logoIluminaria.svg"
+          />
         </div>
 
         <div className="grid shadow-md  p-4 mx-4 md:mx-2  rounded-xl  backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
@@ -153,8 +157,8 @@ const TarjetasTour = () => {
 
         <div className="grid sm:col-span-3 mx-12 text-black">
           
-          <Link href={whatsappUrl} className="px-8   py-4 shadow-md text-2xl text-center text-white border-4 border-white font-semibold rounded-full bg-[#4fc359] tracking-[15px] hover:bg-slate-50 mb-2">
-          <span className="">Cotizar</span>{" "}
+        <Link href={whatsappUrl} className="px-8   py-4 shadow-md text-2xl text-center text-white border-4 border-white font-semibold rounded-full bg-[#4fc359] tracking-[10px] hover:bg-green-400 mb-2">
+          <span className="">Contactar</span>{" "}
           </Link>
         </div>
 

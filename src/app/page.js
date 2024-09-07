@@ -8,7 +8,9 @@ export default function Home() {
     <>
       <div className="grid justify-center w-screen bg-white bg-opacity-85 backdrop-blur-sm">
         <PromoBanner />
-        <GuiaDepartamento />
+        <div className="md:h-fit h-[400px]">
+          <GuiaDepartamento />
+        </div>
         <TarjetasTour />
       </div>
     </>

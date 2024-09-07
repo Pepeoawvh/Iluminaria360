@@ -4,7 +4,7 @@ import Cuadricula from '../components/client/Cuadricula'
 
 const PageGaleria = () => {
   return (
-    <div>
+    <div className=' bg-white'>
       <Cuadricula/>
     </div>
   )
