@@ -11,3 +11,6 @@ const PageGaleria = () => {
 }
 
 export default PageGaleria
+
+
+

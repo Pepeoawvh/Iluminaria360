@@ -5,7 +5,7 @@ const VideoBanner = ({ src }) => {
   const bannerVideo = useRef(null);
 
   return (
-    <div className="h-full w-full ">
+    <div className="h-full w-full animate-fade animate-duration-[1500ms] animate-delay-0 animate-normal animate-fill-forwards ">
       <video
         ref={bannerVideo}
         className="object-fill opacity-790"

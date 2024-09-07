@@ -1,9 +1,14 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { questrial, abel } from "../../ui/fonts.js";
+import { abel } from "../../ui/fonts.js";
+import GuiaPaseo from "./GuiaPaseoZ.jsx";
+import Link from "next/link";
 
 const TarjetasTour = () => {
+  const message = encodeURIComponent("Hola, me interesa consultar por sus servicios.");
+  const whatsappUrl = `https://wa.me/+56949866129?text=${message}`;
+
   return (
     <>
       <h2
@@ -15,7 +20,7 @@ const TarjetasTour = () => {
         className={`${abel.className} grid auto-rows-auto w-screen justify-items-center items-center sm:grid-cols-3 sm:grid-rows-3 gap-4 sm:w-fit sm:m-8 text-black`}
       >
         <div className="grid shadow-md  p-4 mx-4 md:mx-2  rounded-xl  backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
-          <Image src="/img/inmobiliaria.jpg" fill className="rounded-xl" />
+          <Image src="/img/inmobiliaria.jpg" fill className="rounded-xl" alt="Inmobiliaria" />
           <div className="grid inset-0 rounded-xl bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 backdrop-blur-sm">
             <div className="text-center text-black px-12">
               <h3 className="mt-4 text-2xl underline select-none">
@@ -32,7 +37,7 @@ const TarjetasTour = () => {
         </div>
 
         <div className="grid shadow-md  p-4 mx-4 md:mx-2  rounded-xl  backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
-          <Image src="/img/turismo.jpg" fill className="rounded-xl" />
+          <Image src="/img/turismo.jpg" fill className="rounded-xl" alt="Turismo" />
           <div className="grid  inset-0 rounded-xl bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 backdrop-blur-sm">
             <div className="text-center  text-black px-12">
               <h3 className="mt-4 text-2xl underline select-none">
@@ -49,7 +54,7 @@ const TarjetasTour = () => {
         </div>
 
         <div className="grid shadow-md  p-4 mx-4 md:mx-2  rounded-xl  backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
-          <Image src="/img/restaurant.jpg" fill className="rounded-xl" />
+          <Image src="/img/restaurant.jpg" fill className="rounded-xl" alt="Restaurante" />
           <div className="grid  inset-0 rounded-xl bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 backdrop-blur-sm">
             <div className=" text-center  text-black px-12">
               <h3 className="mt-4 text-2xl underline select-none">
@@ -64,7 +69,7 @@ const TarjetasTour = () => {
         </div>
 
         <div className="grid shadow-md  p-4 mx-4 md:mx-2  rounded-xl  backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
-          <Image src="/img/museum.jpg" fill className="rounded-xl" />
+          <Image src="/img/museum.jpg" fill className="rounded-xl" alt="Museo" />
           <div className="grid  inset-0 rounded-xl bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 backdrop-blur-sm">
             <div className="text-center  text-black px-12">
               <h3 className="mt-4 text-2xl underline select-none">
@@ -80,26 +85,11 @@ const TarjetasTour = () => {
         </div>
 
         <div className="grid  rounded-xl w-full backdrop-blur-sm h-60 group hover:scale-105 transition-transform duration-300 px-4 md:px-2  ">
-          <iframe
-            id="tour-zapallar"
-            name="Zapallar"
-            src="https://tour.panoee.com/iframe/zapallar-bB64L5L66"
-            frameBorder="0"
-            width="100%"
-            height="100%"
-            scrolling="no"
-            allowvr="yes"
-            allow="vr; xr; accelerometer; gyroscope; autoplay;"
-            allowFullScreen="false"
-            webkitallowfullscreen="false"
-            mozallowfullscreen="false"
-            loading="lazy"
-            className="rounded-xl shadow-md"
-          />
+          <GuiaPaseo />
         </div>
 
         <div className="grid shadow-md  p-4 mx-4 md:mx-2  rounded-xl  backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
-          <Image src="/img/universidad.jpg" fill className="rounded-xl" />
+          <Image src="/img/universidad.jpg" fill className="rounded-xl" alt="Universidad" />
           <div className="grid  inset-0 rounded-xl bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 backdrop-blur-sm">
             <div className="text-center  text-black px-12">
               <h3 className="mt-4 text-2xl underline select-none">
@@ -115,7 +105,7 @@ const TarjetasTour = () => {
         </div>
 
         <div className="grid shadow-md  p-4 mx-4 md:mx-2  rounded-xl  backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
-          <Image src="/img/industria.jpg" fill className="rounded-xl" />
+          <Image src="/img/industria.jpg" fill className="rounded-xl" alt="Industria" />
           <div className="grid  inset-0 rounded-xl bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 backdrop-blur-sm">
             <div className="text-center  text-black px-12">
               <h3 className="mt-4 text-2xl underline select-none">Industria</h3>
@@ -130,7 +120,7 @@ const TarjetasTour = () => {
         </div>
 
         <div className="grid shadow-md  p-4 mx-4 md:mx-2  rounded-xl  backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
-          <Image src="/img/automotora.jpg" fill className="rounded-xl" />
+          <Image src="/img/automotora.jpg" fill className="rounded-xl" alt="Automotora" />
           <div className="grid  inset-0 rounded-xl bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 backdrop-blur-sm">
             <div className="text-center  text-black px-12">
               <h3 className="mt-4 text-2xl underline select-none">
@@ -146,7 +136,7 @@ const TarjetasTour = () => {
         </div>
 
         <div className="grid shadow-md  p-4 mx-4 md:mx-2  rounded-xl  backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
-          <Image src="/img/aseguradora.jpg" fill className="rounded-xl" />
+          <Image src="/img/aseguradora.jpg" fill className="rounded-xl" alt="Aseguradora" />
           <div className="grid  inset-0 rounded-xl bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 backdrop-blur-sm">
             <div className="text-center  text-black px-12">
               <h3 className="mt-4 text-2xl underline select-none">
@@ -162,9 +152,12 @@ const TarjetasTour = () => {
         </div>
 
         <div className="grid sm:col-span-3 mx-12 text-black">
-          {" "}
-          <span className="px-8  py-4 shadow-md text-2xl">Cotizar</span>{" "}
+          
+          <Link href={whatsappUrl} className="px-8   py-4 shadow-md text-2xl text-center text-white border-4 border-white font-semibold rounded-full bg-[#4fc359] tracking-[15px] hover:bg-slate-50 mb-2">
+          <span className="">Cotizar</span>{" "}
+          </Link>
         </div>
+
       </div>
     </>
   );

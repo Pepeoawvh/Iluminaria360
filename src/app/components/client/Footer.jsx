@@ -4,13 +4,9 @@ import React from 'react';
 export default function Footer() {
   return (
 
-  <footer className="bg-neutral-200 text-center text-white dark:bg-white bg-opacity-30 backdrop-blur-sm">
-    <div className="container pt-9">
-      <div className="mb-9 flex justify-center w-screen">
-
-        
-       
-        <a className="mr-9 text-neutral-800 dark:text-zinc-800">
+  <footer className=" bg-neutral-200 text-center text-white border-t dark:bg-white bg-opacity-30 backdrop-blur-sm">
+      <div className=" grid justify-items-center grid-cols-2 w-screen py-4">
+        <a className="text-neutral-800  justify-self-center dark:text-zinc-800">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-4 w-4"
@@ -30,10 +26,7 @@ export default function Footer() {
               d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
           </svg>
         </a>
-
       </div>
-    </div>
-
     {/* <!--Seccion copyright--> */}
     <div
       className=" text-xs  bg-neutral-300 p-2 text-center text-neutral-700 dark:bg-neutral-700 dark:text-neutral-200  select-none">

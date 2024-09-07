@@ -4,12 +4,13 @@ import NavBar from "./components/client/NavBar";
 import HomeBg from "./components/client/HomeBg";
 import WspButton from "./components/client/WspButton";
 import Footer from "./components/client/Footer";
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${roboto.className} bg-white`}>
-        <HomeBg />
+      <body className={`${roboto.className} grid bg-white`}>
         <NavBar />
+        <HomeBg />
         {children}
         <WspButton/>
         <Footer/>
