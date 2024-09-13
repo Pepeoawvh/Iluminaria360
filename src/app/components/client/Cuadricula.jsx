@@ -44,10 +44,10 @@ const Cuadricula = () => {
           </Link>
 
           <Link href="/guiaecoaldea" className="grid shadow-md p-4 mx-4 md:mx-2 rounded-xl backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300 w-full">
-            <Image src="/img/thumbEcoAldea.jpg" fill className="rounded-xl" alt="Eco Aldea" />
+            <Image src="/img/thumbEcoAldea.jpg" fill className="rounded-xl" alt="EcoAldea" />
             <div className="grid inset-0 rounded-xl bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 backdrop-blur-sm h-fit">
               <div className="text-center text-black px-12">
-                <h3 className="py-2 text-2xl select-none">Eco Aldea</h3>
+                <h3 className="py-2 text-2xl select-none">EcoAldea</h3>
               </div>
             </div>
           </Link>
