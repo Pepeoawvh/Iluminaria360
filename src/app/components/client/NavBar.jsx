@@ -1,13 +1,21 @@
 "use client";
 import { questrial } from "../../ui/fonts.js";
 import { useEffect, useRef, useState } from "react";
-import "../styles/NavBar.css";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
+
+const NAV_LINKS = [
+  { href: "/", label: "Inicio" },
+  { href: "/galeria", label: "Galería" },
+  { href: "/quienesomos", label: "Quiénes Somos" },
+  { href: "/contacto", label: "Contacto" },
+];
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navRef = useRef(null);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleOutsideClick = (event) => {
@@ -15,72 +23,103 @@ const NavBar = () => {
         setIsOpen(false);
       }
     };
-
     document.addEventListener("click", handleOutsideClick);
-
-    return () => {
-      document.removeEventListener("click", handleOutsideClick);
-    };
+    return () => document.removeEventListener("click", handleOutsideClick);
   }, []);
-
-  const handleLinkClick = () => {
-    setIsOpen(false);
-  };
 
   return (
     <nav
       ref={navRef}
-      className=" bg-white marker:grid items-center md:justify-items-center w-screen content-center shadow-sm bg-opacity-30 backdrop-blur-sm h-fit animate-fade animate-duration-[1500ms] animate-delay-0 animate-normal animate-fill-forwards"
+      className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-sm animate-fade animate-duration-[1000ms] animate-fill-forwards"
     >
-      <Link href="/">
-        <div className=" select-none pl-5 ">
+      <div className="flex items-center justify-between px-4 md:px-8 py-2 max-w-7xl mx-auto">
+        {/* Logo */}
+        <Link href="/" onClick={() => setIsOpen(false)} className="shrink-0">
           <Image
-            width={150}
-            height={80}
-            alt="Logo"
-            src="img/logoIluminaria.svg"
+            width={140}
+            height={70}
+            alt="Iluminaria360 - Tours Virtuales y Fotografía Arquitectónica"
+            src="/img/logoIluminaria.svg"
+            priority
           />
-        </div>
-      </Link>
-      <ul
-        className={`grid ${
-          questrial.className
-        } pr-6 sm:h-full bg-[#d4fcc2]  sm:bg-slate-50  text-xl sm:grid-cols-3 sm:pr-8 navItem ${
-          isOpen && "open"
-        } sm:mt-0 mt-12`}
-      >
-        <Link
-          className="grid hover:bg-slate-50 bg-[#e8fede] md:bg-slate-50 md:hover:bg-[#e8fede]  sm:border-x-0 items-center justify-items-center sm:w-full sm:h-full h-fit  px-4 rounded-3xl duration-300 sm:rounded-none w-full select-none"
-          href="/"
-          onClick={handleLinkClick}
-        >
-          <li className="">Inicio</li>
         </Link>
-        <Link
-          className="grid w-full hover:bg-slate-50 bg-[#e8fede] md:bg-slate-50 md:hover:bg-[#e8fede]  sm:border-x items-center justify-items-center sm:w-full sm:h-full  h-fit px-8 rounded-3xl duration-300 sm:rounded-none select-none"
-          href="/galeria"
-          onClick={handleLinkClick}
+
+        {/* Desktop nav */}
+        <ul className={`${questrial.className} hidden sm:flex items-center gap-1`}>
+          {NAV_LINKS.map(({ href, label }) => {
+            const isActive = pathname === href;
+            return (
+              <li key={href}>
+                <Link
+                  href={href}
+                  className={`px-4 py-2 rounded-xl text-base transition-all duration-300 select-none block ${
+                    isActive
+                      ? "bg-[#e8fede] text-[#1B2A4A] font-semibold border-b-2 border-[#a6c356]"
+                      : "text-gray-700 hover:bg-[#e8fede] hover:text-[#1B2A4A]"
+                  }`}
+                >
+                  {label}
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+
+        {/* Hamburger button */}
+        <button
+          className="sm:hidden flex flex-col gap-[5px] p-2 cursor-pointer"
+          onClick={() => setIsOpen(!isOpen)}
+          aria-label={isOpen ? "Cerrar menú" : "Abrir menú"}
+          aria-expanded={isOpen}
         >
-          <li className="">Galeria</li>
-        </Link>
-        <Link
-          className="grid hover:bg-slate-50 bg-[#e8fede] md:bg-slate-50 md:hover:bg-[#e8fede]   sm:border-x-0 items-center justify-items-center sm:w-full sm:h-full h-fit  px-8 rounded-3xl duration-300 sm:rounded-none w-full select-none"
-          href="/quienesomos"
-          onClick={handleLinkClick}
-        >
-          <li className="">Quienes Somos</li>
-        </Link>
-      </ul>
+          <span
+            className={`block w-7 h-[3px] bg-[#a6c356] rounded-full transition-all duration-200 origin-[5px_0px] ${
+              isOpen ? "rotate-45 translate-x-[1px]" : ""
+            }`}
+          />
+          <span
+            className={`block w-7 h-[3px] bg-[#a6c356] rounded-full transition-all duration-200 ${
+              isOpen ? "opacity-0" : ""
+            }`}
+          />
+          <span
+            className={`block w-7 h-[3px] bg-[#a6c356] rounded-full transition-all duration-200 origin-[5px_0px] ${
+              isOpen ? "-rotate-45 translate-x-[1px]" : ""
+            }`}
+          />
+        </button>
+      </div>
+
+      {/* Mobile dropdown */}
       <div
-        className={`navToggle ${isOpen && "open"}`}
-        onClick={() => setIsOpen(!isOpen)}
+        className={`sm:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+          isOpen ? "max-h-64 border-t border-gray-100" : "max-h-0"
+        }`}
       >
-        <span></span>
-        <span></span>
-        <span></span>
+        <ul className={`${questrial.className} bg-white flex flex-col py-2`}>
+          {NAV_LINKS.map(({ href, label }) => {
+            const isActive = pathname === href;
+            return (
+              <li key={href}>
+                <Link
+                  href={href}
+                  onClick={() => setIsOpen(false)}
+                  className={`block px-6 py-3 text-lg transition-colors duration-200 select-none ${
+                    isActive
+                      ? "bg-[#e8fede] text-[#1B2A4A] font-semibold border-l-4 border-[#a6c356]"
+                      : "text-gray-700 hover:bg-[#e8fede]"
+                  }`}
+                >
+                  {label}
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
       </div>
     </nav>
   );
 };
 
 export default NavBar;
+

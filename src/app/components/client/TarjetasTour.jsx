@@ -13,10 +13,10 @@ const TarjetasTour = () => {
       <h2
         className={`${abel.className} mt-12 pb-4 text-center font-bold text-2xl text-black select-none`}
       >
-        Beneficios para su negocio
+        Industrias que se benefician
       </h2>
       <div
-        className={`${abel.className} grid auto-rows-auto w-screen justify-items-center items-center sm:grid-cols-3 sm:grid-rows-3 gap-4 sm:w-fit sm:m-8 text-black`}
+        className={`${abel.className} grid auto-rows-auto w-full justify-items-center items-center sm:grid-cols-3 sm:grid-rows-3 gap-4 sm:w-fit sm:m-8 text-black`}
       >
         <div className="grid shadow-md  p-4 mx-4 md:mx-2  rounded-xl  backdrop-blur-sm h-60 bg-slate-50 bg-opacity-30 group hover:scale-105 transition-transform duration-300">
           <Image src="/img/inmobiliaria.jpg" fill className="rounded-xl" alt="Inmobiliaria" />

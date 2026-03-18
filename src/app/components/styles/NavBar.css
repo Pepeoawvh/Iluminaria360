@@ -1,9 +1,5 @@
+/* NavBar styles migrated to Tailwind. This file is kept empty intentionally. */
 
-  
-  nav {
-    display: grid;
-    height: 50px;
-    grid-template-columns: 0.2fr 1fr;
     grid-template-rows: 1fr;
     justify-items: right;
     color: green;
