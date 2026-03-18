@@ -6,6 +6,7 @@ import { abel, bebas } from "../../ui/fonts.js";
 
 const PromoBanner = () => {
   return (
+    <div className="bg-white w-full">
     <div className="grid sm:grid-cols-2 items-center gap-6 max-w-7xl mx-auto w-full px-4 md:px-8 pt-28 pb-10">
       {/* Video side */}
       <Link href="#homeTour" scroll={true} className="block h-72 sm:h-96 md:h-[480px]">
@@ -42,6 +43,7 @@ const PromoBanner = () => {
           </Link>
         </div>
       </div>
+    </div>
     </div>
   );
 };

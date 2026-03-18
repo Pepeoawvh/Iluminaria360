@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="flex flex-col w-full">
       <PromoBanner />
-      <div id="homeTour" className="md:h-screen h-[500px] px-4 md:px-8 pb-8">
+      <div id="homeTour" className="w-full">
         <GuiaDepartamento />
       </div>
       <Servicios />

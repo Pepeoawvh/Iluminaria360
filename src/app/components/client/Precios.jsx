@@ -64,14 +64,14 @@ const PLANS = [
 
 const Precios = () => {
   return (
-    <section className="bg-gray-50 py-16 px-4">
+    <section className="bg-[#1B2A4A] py-16 px-4 border-b-4 border-white">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className={`${bebas.className} text-4xl md:text-5xl text-[#1B2A4A] mb-3`}>
+          <h2 className={`${bebas.className} text-4xl md:text-5xl text-white mb-3`}>
             Planes y Precios
           </h2>
-          <p className={`${abel.className} text-gray-500 text-lg max-w-xl mx-auto`}>
+          <p className={`${abel.className} text-gray-300 text-lg max-w-xl mx-auto`}>
             Precios referenciales. Cada proyecto es único — cotizamos según tus necesidades reales.
           </p>
         </div>
