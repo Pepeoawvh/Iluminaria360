@@ -50,9 +50,9 @@ const SERVICES = [
         <path strokeLinecap="round" strokeLinejoin="round" d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z" />
       </svg>
     ),
-    title: "Video Inmobiliario / Drone",
+    title: "Video Inmobiliario",
     description:
-      "Producción de video profesional en interior y exterior. Tomas aéreas con drone para mostrar el entorno, accesos y ubicación de tu propiedad o comercio.",
+      "Producción de video profesional en interior y exterior. Mostramos el entorno, accesos y ubicación de tu propiedad o comercio con una producción de alto impacto.",
   },
 ];
 
@@ -74,20 +74,20 @@ const Servicios = () => {
         </div>
 
         {/* Services grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-6 items-stretch">
           {SERVICES.map(({ icon, title, description }) => (
             <div
               key={title}
               className="flex flex-col gap-4 p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-[#a6c356]/60 hover:bg-white/10 transition-all duration-300"
             >
-              <div className="text-[#a6c356]">{icon}</div>
-              <h3 className={`${abel.className} text-xl font-bold text-white`}>{title}</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">{description}</p>
+              <div className="text-[#a6c356] shrink-0">{icon}</div>
+              <h3 className={`${abel.className} text-xl font-bold text-white shrink-0`}>{title}</h3>
+              <p className="text-gray-400 text-sm leading-relaxed flex-1">{description}</p>
             </div>
           ))}
 
           {/* CTA card */}
-          <div className="flex flex-col items-center justify-center gap-4 p-6 rounded-2xl bg-[#a6c356]/10 border-2 border-[#a6c356]/50 text-center sm:col-span-2 lg:col-span-1">
+          <div className="flex flex-col items-center justify-center gap-4 p-6 rounded-2xl bg-[#a6c356]/10 border-2 border-[#a6c356]/50 text-center col-span-1 sm:col-span-2 lg:col-span-1">
             <p className={`${abel.className} text-white text-lg`}>¿No encuentras lo que buscas?</p>
             <p className="text-gray-300 text-sm">
               Cuéntanos tu proyecto y encontramos la solución ideal.
